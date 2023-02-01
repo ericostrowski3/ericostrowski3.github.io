@@ -1,31 +1,97 @@
-body {
-    margin: 0;
+@import url(variables.css);
+
+@font-face {
+    font-family:'j';
+    font-weight:400;
+    src:url(../assets/fonts/SpaceMono-Regular.ttf);
+    font-display:swap
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    background: white;
-    height: 100vh;
-
+@-webkit-keyframes fadeIn {
+    0%{opacity:0}to{opacity:1}
+}
+@keyframes fadeIn {
+    0%{opacity:0}to{opacity:1}
+}
+::selection {
+    background-color:var(--selection)
+}
+::-webkit-scrollbar {
+    -webkit-appearance:none;
+    width:4px;
+    height:4px
+}
+::-webkit-scrollbar-button {
+    display:none
+}
+::-webkit-scrollbar-thumb {
+    background-color:var(--accent)
+}
+* {
+    font-family:'j';
+    margin:0
+}
+html {
+    scroll-behavior:smooth
+}
+h1,span { 
+    font-weight:400;
+    color:var(--text)
+}
+.lnk {
+    text-decoration:none;
+    color:var(--text);
+    transition:.6s ease-in-out
+}
+.lnk:hover {
+    color:var(--texthov)
 }
 a {
-    display: block;
-    color: black;
-    transition: transform 250ms;
-    font-size: 7vh;
-    line-height: normal;
-    
+    padding:0 10px 0 10px;
+    text-decoration:none
 }
-a:link {
-    text-decoration: none;
+body {
+    background-color:var(--background);
+    background-image:url(../assets/images/topography.svg);
+    -webkit-animation-name:fadeIn;
+    animation-name:fadeIn;
+    animation-duration:1s
 }
-a:hover {
-    transform: scale(1.5);
+.links {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:80vh
 }
-.menu {
-   
-    align-self: center;
-    text-align: center;
-
+i {
+    font-style:normal;
+    font-size:24px;
+    padding-left:.2rem;
+    padding-right:.2rem
+}
+.fa-brands {
+    color:var(--icons);
+    transition:.3s ease-in
+}
+.fa-all {
+    color:var(--icons);
+    transition:.3s ease-in
+}
+.fa-brands:hover {
+    color:var(--accent)
+} 
+.fa-all:hover {
+    color:var(--accent)
+} 
+.me {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items:center;
+    border:2px solid var(--accent);
+    border-radius:6px;
+    padding:16px;
+    margin:96px 32px;
+    max-width:100%;
+    min-width:200px
 }
