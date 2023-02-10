@@ -37,3 +37,6 @@
 .envelope::before {
     content: '\f0e0'
  }
+.calendar::before {
+    content: '\f133' 
+}
