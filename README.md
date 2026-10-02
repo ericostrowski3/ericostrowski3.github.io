@@ -1,7 +1,7 @@
 # Eric Ostrowski's website
 
-Source for [www.ericsco.de](https://www.ericsco.de), Eric Ostrowski's personal
-website. The site currently displays a "rework in progress" landing page.
+Source for [www.ericsco.de](https://www.ericsco.de), my personal
+website. Currently undergoing a hosting transfer, so GitHub is hosting a temporary static site. 
 
 ## Project files
 
